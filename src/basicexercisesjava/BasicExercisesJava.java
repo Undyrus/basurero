@@ -19,9 +19,9 @@ public class BasicExercisesJava {
         }
         return exito;
     }  
-    /**
-     * @param args the command line arguments
-     */
+    public int multa(int velocidad, boolean string){
+       return 0;
+    }  
     public static void main(String[] args) {
        BasicExercisesJava exercises = new BasicExercisesJava();
        System.out.print(exercises.fiestaArdillas(50, false));
