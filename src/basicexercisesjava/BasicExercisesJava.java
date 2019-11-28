@@ -19,12 +19,23 @@ public class BasicExercisesJava {
         }
         return exito;
     }  
-    public int multa(int velocidad, boolean string){
-       return 0;
+    public int multa(int velocidad, boolean cumple){
+       int multa = 0;
+       if ((cumple==false&&velocidad<=60)||(cumple==true&&velocidad<=65)){
+           multa = 0;
+       }
+       else if((cumple==false&&(velocidad>60&&velocidad<=80))||(cumple==true&&(velocidad>65&&velocidad<=85))){
+           multa = 1;
+       }
+       else{
+           multa = 2;
+       }
+       return multa;
     }  
     public static void main(String[] args) {
        BasicExercisesJava exercises = new BasicExercisesJava();
        System.out.print(exercises.fiestaArdillas(50, false));
+       System.out.print(exercises.multa(60, false));
     }
     
 }
